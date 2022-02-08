@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&Display=swap');
+
+/* Mobile */
+@media screen and (max-width: 900px) {
+    .grid-container {
+        height: 65rem;
+        width: 16rem;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .sedan-container {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .luxury-container {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .grid-item {
+        padding: 40px;
+    }
+
+    img {
+        width: 48px;
+        height: 30px;
+    }
+
+    .grid-item h1, h2, h3 {
+        font-size: 32px;
+    }
+
+    .grid-item > p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+    .grid-container {
+        height: 31rem;
+        width: 55rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sedan-container {
+        border-radius: 7px 0 0 7px;
+    }
+
+    .luxury-container {
+        border-radius: 0 7px 7px 0;
+    }
+
+    .grid-item {
+        padding: 45px;
+    }
+
+    img {
+        width: 64px;
+        height: 40px;
+    }
+
+    .grid-item h1, h2, h3 {
+        font-size: 30px;
+    }
+
+    .grid-item > p {
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+
+    .btn {
+        margin-top: 4.5rem;
+    }
+}
